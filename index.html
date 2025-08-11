@@ -410,7 +410,9 @@
           <div class="header__wrapper">
             <nav class="header__nav">
               <div class="header__center"> <a class="header__logo" href="/" aria-label="Переход на главную"><img class="header__logo-icon" src="img/content/logo-x.png"></a>
-                <div class="header__icons"> <a class="header__phone" href="tel:+79990219990">+7 999 021 99 90</a><a class="header__icon" href="#!">
+                <div class="header__phones-mobile"><a class="header__phone-mobile" href="tel:+79990219990">+7 999 021 99 90 <span>СПБ</span></a><a class="header__phone-mobile" href="tel:+79229444410">+7 922 944 44 10 <span>Киров</span></a></div>
+                <div class="header__icons"> 
+                  <div class="header__phones"><a class="header__phone" href="tel:+79990219990">+7 999 021 99 90 СПБ</a><a class="header__phone" href="tel:+79229444410">+7 922 944 44 10 Киров</a></div><a class="header__icon" href="#!">
                     <svg width="20" height="20" aria-hidden="true">
                       <use xlink:href="#vk"></use>
                     </svg></a><a class="header__icon" href="#!">
@@ -422,21 +424,19 @@
                     </svg></a><a class="header__icon" href="#!">
                     <svg width="20" height="20" aria-hidden="true">
                       <use xlink:href="#star"></use>
-                    </svg></a></div>
+                    </svg></a>
+                </div>
                 <button class="btn-reset main-nav__toggle" type="button" aria-label="Переключатель отображения меню" aria-pressed="false" data-toggle-menu><span></span><span></span><span></span></button>
                 <div class="header__bottom"> 
                   <div class="main-nav__menu"><ul class="main-nav__list" data-header-accordion>
 <li class="main-nav__item">
-<a class="main-nav__link" href="#">О компании</a>
+<a class="main-nav__link" href="#command">О компании</a>
 </li>
 <li class="main-nav__item">
-<a class="main-nav__link" href="#">Обзоры</a>
+<a class="main-nav__link" href="#2">Обзоры</a>
 </li>
 <li class="main-nav__item">
-<a class="main-nav__link" href="#">Онлайн-конфигуратор</a>
-</li>
-<li class="main-nav__item">
-<a class="main-nav__link" href="#">Контакты</a>
+<a class="main-nav__link" href="">Контакты</a>
 </li>
 </ul>
                   </div>
@@ -480,29 +480,58 @@
                     <p class="intro__desc-small">Дешевле, <br>чем в России </p>
                   </div>
                 </div>
-                <div class="intro__pic">
-                  <div class="intro__image"> <img src="img/content/car.png" alt="Авто">
-                    <div class="intro__image-info"> 
-                      <p class="intro__name">MITSUBISHI <br>OUTLANDER</p>
-                      <div class="intro__desc"> 
-                        <div class="intro__desc-item"> 
-                          <svg width="20" height="20" aria-hidden="true">
-                            <use xlink:href="#desc1"></use>
-                          </svg>
-                          <p>Год выпуска: 2022</p>
-                        </div>
-                        <div class="intro__desc-item"> 
-                          <svg width="20" height="20" aria-hidden="true">
-                            <use xlink:href="#desc2"></use>
-                          </svg>
-                          <p>Пробег: новый</p>
+                <div class="intro__pic swiper" data-slider="pic">
+                  <div class="swiper-wrapper"> 
+                    <div class="swiper-slide">
+                      <div class="intro__image"> <img src="img/content/audi.jpg" alt="Авто">
+                        <div class="intro__image-info"> 
+                          <p class="intro__name">Audi A7</p>
+                          <div class="intro__desc"> 
+                            <div class="intro__desc-item"> 
+                              <svg width="20" height="20" aria-hidden="true">
+                                <use xlink:href="#desc1"></use>
+                              </svg>
+                              <p>Год выпуска: 2020</p>
+                            </div>
+                            <div class="intro__desc-item"> 
+                              <svg width="20" height="20" aria-hidden="true">
+                                <use xlink:href="#desc2"></use>
+                              </svg>
+                              <p>Пробег: 38688км</p>
+                            </div>
+                          </div>
                         </div>
                       </div>
+                      <div class="intro__image-bottom"> 
+                        <p class="intro__image-price"><span>Привезли за</span> 6 044 000 ₽</p>
+                        <p class="intro__image-subprice">Цена в РФ: 7 450 000 ₽</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="intro__image-bottom"> 
-                    <p class="intro__image-price"><span>Привезли за</span> 2 858 000 ₽</p>
-                    <p class="intro__image-subprice">Цена в РФ: 3 800 000 ₽</p>
+                    <div class="swiper-slide">
+                      <div class="intro__image"> <img src="img/content/kia.jpg" alt="Авто">
+                        <div class="intro__image-info"> 
+                          <p class="intro__name">Kia Sorento</p>
+                          <div class="intro__desc"> 
+                            <div class="intro__desc-item"> 
+                              <svg width="20" height="20" aria-hidden="true">
+                                <use xlink:href="#desc1"></use>
+                              </svg>
+                              <p>Год выпуска: 2023</p>
+                            </div>
+                            <div class="intro__desc-item"> 
+                              <svg width="20" height="20" aria-hidden="true">
+                                <use xlink:href="#desc2"></use>
+                              </svg>
+                              <p>Пробег: 18831км</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="intro__image-bottom"> 
+                        <p class="intro__image-price"><span>Привезли за</span> 4 138 000 ₽</p>
+                        <p class="intro__image-subprice">Цена в РФ: 5 500 000 ₽</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -522,10 +551,16 @@
                     <button class="intro__form-btn" type="submit">Получить бесплатный подбор</button>
                   </div>
                   <p class="intro__chek">Нажимая кнопку, я соглашаюсь с <a href="#!">политикой конфиденциальности</a></p>
-                </form><a class="intro__what" href="#!">Написать <br>в WhatsApp 
-                  <svg width="50" height="50" aria-hidden="true">
-                    <use xlink:href="#form-what"></use>
-                  </svg></a>
+                </form>
+                <div class="intro__soc"><a class="intro__what" href="#!"> 
+                    <svg width="50" height="50" aria-hidden="true">
+                      <use xlink:href="#form-what"></use>
+                    </svg></a><a class="intro__what" href="https://t.me/carpauto" target="_blank"> 
+<svg width="50" height="50" aria-hidden="true">
+<use xlink:href="#form-t"></use> 
+</svg>
+</a>
+                </div>
               </div>
             </div>
           </div>
@@ -590,7 +625,7 @@
                     <use xlink:href="#prof6"></use>
                   </svg>
                   <p class="profit__name">13 лет опыта основателя компании в автобизнесе</p>
-                  <p class="profit__desc">Китай, Корея, ОАЭ и Европа — прямой доступ к глобальному рынку через наши офисы.</p>
+                  <p class="profit__desc">Знаем, как выглядит идеальный автомобиль и как его привезти без риска.</p>
                 </div>
                 <div class="profit__item"> 
                   <svg width="50" height="50" aria-hidden="true">
@@ -609,15 +644,12 @@
               <div class="video__info"> 
                 <h2 class="video__title">Привезем даже санкционные автомобили</h2>
                 <p class="video__text">с объемом двигателя более 2 литров <br>и стоимостью свыше 50 000 $</p>
-              </div><div class="video-preview">
-<img src="img/content/prev.png" alt="Превью видео 1" class="video-preview__image">
-<button class="video-play-btn" aria-label="Воспроизвести видео">
-<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="50" height="50" rx="25" fill="white" fill-opacity="0.5"/>
-<path d="M33.5 24.634C34.1667 25.0189 34.1667 25.9811 33.5 26.366L22.25 32.8612C21.5833 33.2461 20.75 32.765 20.75 31.9952V19.0048C20.75 18.235 21.5833 17.7539 22.25 18.1388L33.5 24.634Z" fill="white"/>
-</svg>
-</button>
-</div>
+              </div>
+              <div class="video__box">
+                 <div class="video-wrapper">
+<iframe src="https://vk.com/video_ext.php?oid=-216415979&id=456239381&hash=[HASH]&autoplay=0" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+</div> 
+              </div>
             </div>
           </div>
         </section>
@@ -744,6 +776,16 @@
                         <input type="many" name="many" placeholder="Ваш бюджет">
                       </label>
                     </div>
+                    <div class="custom-input">
+                      <label>
+                        <input type="text" name="car_brand" placeholder="Марка автомобиля">
+                      </label>
+                    </div>
+                    <div class="custom-input">
+                      <label>
+                        <input type="text" name="car_model" placeholder="Модель автомобиля">
+                      </label>
+                    </div>
                   </div>
                   <button class="complect__btn" type="submit">Собрать идеальный автомобиль</button>
                   <p class="complect__chek">Нажимая кнопку, я соглашаюсь <br>с <a href="#!">политикой конфиденциальности</a></p>
@@ -754,29 +796,65 @@
         </section>
         <section class="comand"> 
           <div class="container"> 
+            <div class="command__hollow" id="command"></div>
             <div class="comand__wrapper"> 
               <h2 class="comand__title">КОМАНДА <span>CARP</span></h2>
               <p class="comand__text">Ведущие специалисты отрасли проверят ваш автомобиль на соответствие высоким стандартам качества и надежности</p>
               <ul class="comand__list"> 
                 <li class="comand__item"> 
-                  <div class="comand__image"> <img src="img/content/comand.png" alt="Команда"></div>
+                  <div class="comand__image"> <img src="img/content/comand.png" loading="lazy" alt="Команда"></div>
                   <div class="comand__info"> 
                     <p class="comand__name">Миша Петров</p>
                     <p class="comand__work">Генеральный директор</p>
                   </div>
                 </li>
                 <li class="comand__item"> 
-                  <div class="comand__image"> <img src="img/content/comand.png" alt="Команда"></div>
+                  <div class="comand__image"> <img src="img/content/command1.jpg" loading="lazy" alt="Команда"></div>
                   <div class="comand__info"> 
-                    <p class="comand__name">Миша Петров</p>
-                    <p class="comand__work">Генеральный директор</p>
+                    <p class="comand__name">Юрий Гнутов</p>
+                    <p class="comand__work">Логист </p>
                   </div>
                 </li>
                 <li class="comand__item"> 
-                  <div class="comand__image"> <img src="img/content/comand.png" alt="Команда"></div>
+                  <div class="comand__image"> <img src="img/content/command2.jpg" loading="lazy" alt="Команда"></div>
                   <div class="comand__info"> 
-                    <p class="comand__name">Миша Петров</p>
-                    <p class="comand__work">Генеральный директор</p>
+                    <p class="comand__name">Агнесса Сунцова</p>
+                    <p class="comand__work">Маркетолог</p>
+                  </div>
+                </li>
+                <li class="comand__item"> 
+                  <div class="comand__image"> <img src="img/content/command3.jpg" loading="lazy" alt="Команда"></div>
+                  <div class="comand__info"> 
+                    <p class="comand__name">Виталий Антощенко</p>
+                    <p class="comand__work">Менеджер по работе с клиентами</p>
+                  </div>
+                </li>
+                <li class="comand__item"> 
+                  <div class="comand__image"> <img src="img/content/command4.jpg" loading="lazy" alt="Команда"></div>
+                  <div class="comand__info"> 
+                    <p class="comand__name">Дмитрий Сунцов</p>
+                    <p class="comand__work">Основатель компании</p>
+                  </div>
+                </li>
+                <li class="comand__item"> 
+                  <div class="comand__image"> <img src="img/content/command5.jpg" loading="lazy" alt="Команда"></div>
+                  <div class="comand__info"> 
+                    <p class="comand__name">Дмитрий Задорожный</p>
+                    <p class="comand__work">Руководитель офиса г. Санкт- Петербург</p>
+                  </div>
+                </li>
+                <li class="comand__item"> 
+                  <div class="comand__image"> <img src="img/content/command6.jpg" loading="lazy" alt="Команда"></div>
+                  <div class="comand__info"> 
+                    <p class="comand__name">Шулаев Евгений</p>
+                    <p class="comand__work">Специалист по подбору автомобилей</p>
+                  </div>
+                </li>
+                <li class="comand__item"> 
+                  <div class="comand__image"> <img src="img/content/command7.jpg" loading="lazy" alt="Команда"></div>
+                  <div class="comand__info"> 
+                    <p class="comand__name">Владислав Самарин</p>
+                    <p class="comand__work">Специалист по работе с клиентами</p>
                   </div>
                 </li>
               </ul>
@@ -949,10 +1027,10 @@
               <ul class="reviews__panel"> 
                 <div class="reviews__tab-list swiper" data-slider="reviews">
                   <div class="swiper-wrapper"> 
-                    <div class="swiper-slide"> <a class="reviews__image" href="https://yandex.ru/maps/org/carp/40459266052/reviews/?ll=30.394073%2C59.942808&amp;z=16" target="_blank"> <img src="img/content/rew1.png" alt="Фото"></a>
+                    <div class="swiper-slide"> <a class="reviews__image" href="https://yandex.ru/maps/org/carp/40459266052/reviews/?ll=30.394073%2C59.942808&amp;z=16" target="_blank"> <img src="img/content/rew-1.jpg" alt="Фото"></a>
                       <div class="reviews__info"> 
-                        <p class="reviews__name">Александр, Москва</p>
-                        <p class="reviews__desc">Montero Sport из ОАЭ за 3 месяца — и тур в Турцию на двоих в подарок! Щедро и приятно</p>
+                        <p class="reviews__name">Александр, Киров</p>
+                        <p class="reviews__desc">Montero Sport из ОАЭ — и тур в Турцию на двоих в подарок! Щедро и приятно</p>
                         <div class="reviews__block"> 
                           <p class="reviews__bname">MITSUBISHI Montero</p>
                           <div class="reviews__box"> 
@@ -1007,7 +1085,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="swiper-slide"> <a class="reviews__image" href="https://yandex.ru/maps/org/carp/40459266052/reviews/?ll=30.394073%2C59.942808&amp;z=16" target="_blank"> <img src="img/content/mitsubishi.jpg" alt="Фото"></a>
+                    <div class="swiper-slide"> <a class="reviews__image" href="https://yandex.ru/maps/org/carp/40459266052/reviews/?ll=30.394073%2C59.942808&amp;z=16" target="_blank"> <img src="img/content/paj.jpg" alt="Фото"></a>
                       <div class="reviews__info"> 
                         <p class="reviews__name">Александр, Санкт-Петербург</p>
                         <p class="reviews__desc">За 1,5 месяца привезли бомбовый Pajero с комплектацией под заказ.На всех этапах — подробные отчеты, где находится машина. Без волнений.Схема законная, прозрачная, все в срок. Цены шокируют (в хорошем смысле)!Впервые смог позволить себе новый автомобиль, а не с пробегом. Совсем другие ощущения!</p>
@@ -1065,9 +1143,9 @@
                         </div>
                       </div>
                     </div>
-                    <div class="swiper-slide"> <a class="reviews__image" href="https://yandex.ru/maps/user/2x5jz3jgmq9862ngcb06zn04jg?ll=30.394073%2C59.942808&amp;z=16" target="_blank"> <img src="img/content/kia.jpg" alt="Фото"></a>
+                    <div class="swiper-slide"> <a class="reviews__image" href="https://yandex.ru/maps/user/2x5jz3jgmq9862ngcb06zn04jg?ll=30.394073%2C59.942808&amp;z=16" target="_blank"> <img src="img/content/kia2.jpg" alt="Фото"></a>
                       <div class="reviews__info"> 
-                        <p class="reviews__name">Максим, Санкт-Петербург</p>
+                        <p class="reviews__name">Максим, </p>
                         <p class="reviews__desc">Хотел выразить огромную благодарность Дмитрию и Данилу за их ответственную и профессиональную работу в поиске и приобретении автомобиля! Все максимально открыто и понятно, начиная с этапа подбора и до долгожданного и счастливого момента получения авто! Спасибо за особую лёгкость в прохождении такого трудного и многоэтапного пути, за соблюдение всех сроков и договоренностей и оперативное решение всех вопросов! Вы - профессионалы своего дела! 🤝</p>
                         <div class="reviews__block"> 
                           <p class="reviews__bname">Kia Sorento</p>
@@ -1110,14 +1188,30 @@
             </div>
           </div>
         </section>
-        <section class="pur"> 
+        <section class="pur" id="2">
           <div class="container"> 
-            <div class="pur__wrapper"> 
-              <div class="pur__top"> 
-                <h2 class="pur__title"><span>Честные обзоры</span> и особенности выбора <br>автомобиля в разных странах</h2><a class="pur__link" href="#!">Смотрите на Дзен
-                  <svg width="50" height="50" aria-hidden="true">
-                    <use xlink:href="#pur"></use>
-                  </svg></a>
+            <div class="pur__wrapper">
+              <div class="pur__top">
+                <h2 class="pur__title"><span>Честные обзоры</span> и особенности выбора <br>автомобиля в разных странах</h2>
+                <div class="pur__social"><a class="pur__link" href="#!"> 
+                    <svg width="50" height="50" aria-hidden="true">
+                      <use xlink:href="#pur"></use>
+                    </svg></a><a class="pur__link" href="#!">
+<svg width="50" height="50" aria-hidden="true">
+<use xlink:href="#form-what"></use>
+</svg>
+</a>
+<a class="pur__link" href="https://t.me/carpauto" target="_blank">
+<svg width="50" height="50" aria-hidden="true">
+<use xlink:href="#form-t"></use>
+</svg>
+</a>
+<a class="pur__link" href="#!"> 
+<svg width="50" height="50" aria-hidden="true">
+<use xlink:href="#vk"></use>
+</svg>
+</a>
+                </div>
               </div>
               <div class="pur__bottom">
                  <div class="video-wrapper">
@@ -1205,9 +1299,6 @@
 </div>
 </div>
               </div>
-              <div class="answer__right">
-                <p class="answer__right-text">Фото, видео, VIN-история, отчеты — у вас на руках. Вы знаете, за что платите деньги и уверены в результате. Фото, видео, VIN-история, отчеты — у вас на руках. Вы знаете, за что платите деньги и уверены в результате. Фото, видео, VIN-история, отчеты — у вас на руках. Вы знаете, за что платите деньги и уверены в результате.</p>
-              </div>
             </div>
           </div>
         </section>
@@ -1222,16 +1313,22 @@
                 <div class="work__item"> 
                   <div class="work__icon"> <img src="img/content/work1.png" alt="Флаг"></div>
                   <p class="work__city">Адреса офисов в России</p>
-                  <div class="work__adress"> 
-                    <p>Санкт-Петербург <br>Смольный проспект, 17</p>
-                    <p>Киров <br>Казанская, 85, оф. 305</p>
+                  <div class="work__adress">
+                    <div class="work__adress-item"> 
+                      <p>Санкт-Петербург <br>Смольный проспект, 17</p><a href="tel:+79990219990">+7 999 021 99 90</a>
+                    </div>
+                    <div class="work__adress-item"> 
+                      <p>Киров <br>Казанская, 85, оф. 305</p><a href="tel:+79229444410">+7 922 944 44 10</a>
+                    </div>
                   </div>
                 </div>
                 <div class="work__item"> 
                   <div class="work__icon"> <img src="img/content/work2.png" alt="Флаг"></div>
                   <p class="work__city">Адреса офисов в Китае</p>
                   <div class="work__adress"> 
-                    <p>Suyu District, Suqian, Jiangsu <br>E-commerce Industrial Park, Qizhi Building, C2 Building, 802, 22380</p>
+                    <div class="work__adress-item"> 
+                      <p>Suyu District, Suqian, Jiangsu <br>E-commerce Industrial Park, Qizhi Building, <br>C2 Building, 802, 22380</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1274,18 +1371,10 @@
                   </svg></a><a href="#!">
                   <svg width="30" height="30" aria-hidden="true">
                     <use xlink:href="#f4"></use>
-                  </svg></a><a href="#!">
-                  <svg width="30" height="30" aria-hidden="true">
-                    <use xlink:href="#f5"></use>
                   </svg></a></div>
-              <div class="footer__data"> <a href="tel:+79990219990">+7 999 021 99 90</a><a href="mailto:example@example.ru">example@example.ru</a></div>
+              <div class="footer__data"> <a href="tel:+79990219990">+7 999 021 99 90 СПБ</a><a href="tel:+79229444410">+7 922 944 44 10 Киров</a><a href="mailto:9990219990@inbox.ru">9990219990@inbox.ru</a></div>
             </div>
             <div class="footer__center"> <a href="#!">Политика конфиденциальности</a></div>
-            <div class="footer__right"> <a href="https://kdm1.ru/">
-                <svg width="65" height="50" aria-hidden="true">
-                  <use xlink:href="#doc"></use>
-                </svg>
-                <p class="footer__doc">Сделано в «Клинике <br>доброго маркетолога»</p></a></div>
           </div>
         </div>
       </footer>
