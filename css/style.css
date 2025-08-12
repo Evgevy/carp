@@ -13059,6 +13059,10 @@ button,
     height: 40px;
   }
 
+  .header__bottom {
+    top: 85px;
+  }
+
   .intro__subtext {
     font-size: 16px;
   }
