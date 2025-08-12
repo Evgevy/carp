@@ -9837,6 +9837,8 @@ button,
   vertical-align: middle;
   color: rgb(120, 120, 120);
   margin: 0;
+  max-width: 327px;
+  width: 100%;
 }
 
 .profit__list {
@@ -12166,6 +12168,10 @@ button,
     max-width: 100%;
   }
 
+  .answer .accordion__inner br {
+    display: none;
+  }
+
   .answer__right-text {
     margin-top: 70px;
   }
@@ -12678,6 +12684,10 @@ button,
 
   .profit__name {
     font-size: 20px;
+  }
+
+  .profit__desc {
+    max-width: 100%;
   }
 
   .profit__list {
