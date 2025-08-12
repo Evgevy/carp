@@ -3222,9 +3222,13 @@ button,
 
 .header {
   overflow: hidden;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   z-index: 3;
+  background-color: rgb(26, 26, 24);
 }
 
 .header__wrapper {
@@ -4045,7 +4049,7 @@ button,
 }
 
 .intro__wrapper {
-  padding: 15px 0 40px;
+  padding: 110px 0 40px;
 }
 
 .intro__content {
